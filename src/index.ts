@@ -1,5 +1,5 @@
 /** Use Axios to get data from restcountries api */
-import axios from "axios";
+import axios from 'axios';
 
 /** Use the free API https://restcountries.eu/
  * You will use the following endpoints

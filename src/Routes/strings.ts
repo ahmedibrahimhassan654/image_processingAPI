@@ -4,9 +4,9 @@ const concat = (str1: string, str2: string): string => {
 
 const capitalize = (str: string): string => {
   const newStr = str
-    .split(" ")
+    .split(' ')
     .map((word) => word[0].toUpperCase() + word.substr(1))
-    .join(" ");
+    .join(' ');
   return newStr;
 };
 
