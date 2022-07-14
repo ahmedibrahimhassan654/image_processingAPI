@@ -18,18 +18,18 @@ async function getCountry(name: string) {
   };
 }
 
-/** Create a test for this getRegion function */
-async function getRegionCountries(regionalbloc: string) {
-  const getApi = await axios(
-    `https://restcountries.eu/rest/v2/regionalbloc/${regionalbloc}`
-  );
-  const data = getApi.data;
-  const countries = [];
-  for (let i = 0; i < data.length; i++) {
-    countries.push(data[i].name);
-  }
-  return countries;
-}
+// /** Create a test for this getRegion function */
+// async function getRegionCountries(regionalbloc: string) {
+//   const getApi = await axios(
+//     `https://restcountries.eu/rest/v2/regionalbloc/${regionalbloc}`
+//   );
+//   const data = getApi.data;
+//   const countries = [];
+//   for (let i = 0; i < data.length; i++) {
+//     countries.push(data[i].name);
+//   }
+//   return countries;
+// }
 
 /** Create getRegionCapitals function here */
 async function getRegionCapitals(regionalbloc: string) {

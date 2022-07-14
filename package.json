@@ -8,6 +8,7 @@
     "dev": "node build/index",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine",
+    "lint": "eslint \"src/**/*.ts\"",
     "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
   "author": "ahmed-with-udacity-course",
@@ -16,6 +17,11 @@
     "@types/axios": "^0.14.0",
     "@types/jasmine": "^4.0.3",
     "@types/node": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "ts-node": "^10.8.2",
     "typescript": "^4.7.4"
