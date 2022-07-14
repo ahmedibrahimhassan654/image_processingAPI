@@ -2,7 +2,15 @@ import express from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 
+
+//import routes from './routes';
+import imagerout from './routes/image';
+
+
 const app = express();
+
+
+
 // Load env vars
 dotenv.config({ path: './config.env' });
 // Dev logging middleware
@@ -10,10 +18,18 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+
+
 const PORT = process.env.PORT || 5000;
-app.get('/api', (req, res) => {
-  res.send('Hello, world!');
-});
+
+
+//mideelware for post JSON BODY
+app.use(express.json());
+
+
+// Mount routers
+app.use('/api/images', imagerout);
+
 app.listen(PORT, () =>
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
