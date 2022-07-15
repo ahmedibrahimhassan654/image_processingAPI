@@ -32,8 +32,17 @@ app.use('/api/images', imagerout);
 // error handler middleware
 app.use(errorMiddleware);
 
-app.listen(PORT, () =>
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
-);
+app.listen(PORT, () => {
+  if (process.env.NODE_ENV === 'development') {
+    console.log(
+      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
+    );
+  } else if (process.env.NODE_ENV === 'production') {
+    console.log(
+      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
+    );
+  }
+  // console.log(process.env.NODE_ENV);
+});
 
 export default app;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
-    "prod": "npm run build && node build/.",
+    "prod": "NODE_ENV=production npm run build && node build/.",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine",
     "lint": "eslint \"src/**/*.ts\"",
