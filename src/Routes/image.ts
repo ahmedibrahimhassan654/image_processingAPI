@@ -1,7 +1,7 @@
-import express from 'express';
-import imageProcess from '../controllers/image';
-const imagerout = express.Router();
+import { Router } from 'express';
+import imageresize from '../controllers/image';
+const imagerout = Router();
 
-imagerout.get('/', imageProcess);
+imagerout.route('/resize').get(imageresize);
 
 export default imagerout;

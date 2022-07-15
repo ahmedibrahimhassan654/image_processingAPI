@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import path from 'path';
 import morgan from 'morgan';
 import helmet from 'helmet';
 
@@ -20,6 +21,9 @@ const PORT = process.env.PORT || 5000;
 
 //mideelware for post JSON BODY
 app.use(express.json());
+
+// add middleware to for static files
+app.use('/images', express.static(path.join(__dirname, 'images')));
 // HTTP security middleware headers
 app.use(helmet());
 // Mount routers
