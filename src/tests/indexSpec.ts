@@ -13,12 +13,14 @@ describe('Test end point response  ', async () => {
     );
     expect(response.status).toBe(200);
   });
-  // it('Images by first time properties should not be exist', () => {
-  //   expect(
-  //     fs.existsSync(`${IMAGE_OUTPUT_DIR_PATH}/palmtunnel_500_500.jpg`)
-  //   ).toBeFalsy();
-  // });
-  // it('Images by second time properties should exist', () => {
-  //   expect(fs.existsSync(`${IMAGE_OUTPUT_DIR_PATH}/palmtunnel_200_200.jpg`)).toBeTruthy()
-  // })
+  it('Images by first time properties should not be exist', () => {
+    expect(
+      fs.existsSync(`${IMAGE_OUTPUT_DIR_PATH}/palmtunnel_500_500.jpg`)
+    ).toBeFalsy();
+  });
+  it('Images by second time properties should exist', () => {
+    expect(
+      fs.existsSync(`${IMAGE_OUTPUT_DIR_PATH}/palmtunnel_500_500.jpg`)
+    ).toBeTruthy();
+  });
 });
