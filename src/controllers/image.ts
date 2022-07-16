@@ -16,11 +16,6 @@ const imageresize = async (req: Request, res: Response): Promise<any> => {
       // resize image to target #{width}, #{height} and export it to thumbnails folder
       await resizeController(width, height, filename);
     }
-    // res.render('resize', {
-    //   width,
-    //   height,
-    //   thumbnail: `${filename}_${width}_${height}.jpg`,
-    // });
 
     res.status(200).json({
       width,

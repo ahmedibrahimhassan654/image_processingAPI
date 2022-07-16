@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to give you a real-world scenario in which you would read and write to your disk via a Node.js express server rather than a database. The project you create serves two purposes: to prepare you for setting up scalable code and architecture for real-world projects and tie together some of the most popular middleware and utilities found in Node.js projects. This project barely touches the surface of what is possible but will prove your ability to use what you’ve learned in real-world scenarios.
+This project provides a simple, high-level interface to image processing.requried in UDACTITY Addvanced Full stack Nanodegree presented from EGYPTIAN covernment.
 
 ## How to build and start the server
 
@@ -10,31 +10,29 @@ The project can be built and run in the following ways
 
 ### 1. Install all dependencies
 
-`yarn`
+`npm install`
 
 ### 2. Build
 
-`yarn build`
+`npm run build`
 
-This command will build the typeScript code into JavaScript and save them in the `./build` folder.
+### 3. production
 
-### 3. Start the Server
+`npm run prod`
 
-`yarn start`
+### 4. development
 
-This command will start the server running on port `3000`.
+`npm run dev`
 
-## Testing and Linting
+### 5. test
 
-Here, I will show you how to run the test and also how to check that our code respects all the eslint rules.
+`npm run tset`
 
-### 1. Linting
+### 6. Linting
 
-`yarn lint`
+`npm run lint`
 
-### 2. Testing
 
-`yarn test`
 
 ## Endpoint
 
