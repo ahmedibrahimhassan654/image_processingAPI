@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a simple, high-level interface to image processing.requried in UDACTITY Addvanced Full stack Nanodegree presented from EGYPTIAN covernment.
+This project provides a simple, high-level interface to image processing.requried in UDACTITY Addvanced Full stack Nanodegree presented from Egypt-FWD-MCIT.
 
 ## How to build and start the server
 
