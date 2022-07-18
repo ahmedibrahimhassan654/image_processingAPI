@@ -20,13 +20,11 @@ The project can be built and run in the following ways
 
 `npm run prod`
 
-![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/server%20run.PNG?raw=true)
-
+![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/production.PNG?raw=true)
 
 ### 4. development
 
 `npm run dev`
-
 
 ![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/server%20run.PNG?raw=true)
 
@@ -34,7 +32,7 @@ The project can be built and run in the following ways
 
 `npm run tset`
 
-![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/test%20snipets.PNG?raw=true)
+![server test ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/test%20snipets.PNG?raw=true)
 
 ### 6. Linting
 
