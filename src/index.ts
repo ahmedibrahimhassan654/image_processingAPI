@@ -24,6 +24,11 @@ app.use(express.json());
 
 // add middleware to for static files
 app.use('/images', express.static(path.join(__dirname, 'images')));
+
+// set up template engine and set the directory
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, 'views'));
+
 // HTTP security middleware headers
 app.use(helmet());
 // Mount routers

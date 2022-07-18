@@ -17,11 +17,11 @@ const imageresize = async (req: Request, res: Response): Promise<any> => {
       await resizeController(width, height, filename);
     }
 
-    res.status(200).json({
+    res.render('resize', {
       width,
       height,
-      thumbnail: `${filename}_${width}_${height}.jpg`,
-    });
+      thumbnail: `${filename}_${width}_${height}.jpg`
+    })
   } catch (err) {
     console.log(err);
   }
