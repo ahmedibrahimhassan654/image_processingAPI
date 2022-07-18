@@ -20,13 +20,21 @@ The project can be built and run in the following ways
 
 `npm run prod`
 
+![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/server%20run.PNG?raw=true)
+
+
 ### 4. development
 
 `npm run dev`
 
+
+![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/server%20run.PNG?raw=true)
+
 ### 5. test
 
 `npm run tset`
+
+![server dev ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/test%20snipets.PNG?raw=true)
 
 ### 6. Linting
 
@@ -40,6 +48,10 @@ Method: `get`
 URL Params: `height` and `width` - the height or width of the image in pixels
 Query Param: `filename` - the specific image you are requesting.
 for example: `http://localhost:3000/api/images/resize?filename=palmtunnel&width=80&height=80`
+
+![Postman res ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/postman%20res.PNG?raw=true)
+
+![Browser res ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/rest-response%20in%20the%20browser.PNG?raw=true)
 
 #### Available Image options
 
@@ -62,7 +74,3 @@ for example: `http://localhost:3000/api/images/resize?filename=palmtunnel&width=
 - [Express](https://expressjs.com/) - The web framework.
 - [TypeScript](https://www.typescriptlang.org/) - The language used.
 - [Sharp](https://sharp.pixelplumbing.com/) - NodeJS image processor.
-<p align="center">
-  <img src="your_relative_path_here" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
-</p>
