@@ -25,10 +25,6 @@ app.use(express.json());
 // add middleware to for static files
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// set up template engine and set the directory
-app.set('view engine', 'ejs');
-app.set('views', path.resolve(__dirname, 'views'));
-
 // HTTP security middleware headers
 app.use(helmet());
 // Mount routers
@@ -36,18 +32,11 @@ app.use('/api/images', imagerout);
 
 // error handler middleware
 app.use(errorMiddleware);
-
+// start express server
 app.listen(PORT, () => {
-  if (process.env.NODE_ENV === 'development') {
-    console.log(
-      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
-    );
-  } else if (process.env.NODE_ENV === 'production') {
-    console.log(
-      `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
-    );
-  }
-  // console.log(process.env.NODE_ENV);
+  console.log(
+    `Server running in ${process.env.NODE_ENV} env mode on port ${PORT}`
+  );
 });
 
 export default app;
