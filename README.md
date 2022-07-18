@@ -62,3 +62,7 @@ for example: `http://localhost:3000/api/images/resize?filename=palmtunnel&width=
 - [Express](https://expressjs.com/) - The web framework.
 - [TypeScript](https://www.typescriptlang.org/) - The language used.
 - [Sharp](https://sharp.pixelplumbing.com/) - NodeJS image processor.
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
