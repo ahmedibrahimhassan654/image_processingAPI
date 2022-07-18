@@ -38,6 +38,14 @@ The project can be built and run in the following ways
 
 `npm run lint`
 
+![server test ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/lint.PNG?raw=true)
+
+### 6. prettier format
+
+`npm run format`
+
+![server test ](https://github.com/ahmedibrahimhassan654/image_processingAPI/blob/master/screens/formate%20with%20prettier.PNG?raw=true)
+
 ## Endpoint
 
 ### `/api/images/resize?filename=<filename>&width=<width>&height=<height>`
@@ -72,3 +80,8 @@ for example: `http://localhost:3000/api/images/resize?filename=palmtunnel&width=
 - [Express](https://expressjs.com/) - The web framework.
 - [TypeScript](https://www.typescriptlang.org/) - The language used.
 - [Sharp](https://sharp.pixelplumbing.com/) - NodeJS image processor.
+- [Postman](https://www.getpostman.com/) - The REST API tool.
+- [Prettier](https://prettier.io/) - The code formatter.
+- [eslint](https://eslint.org/) - Find and fix problems in code.
+- [jasmine](https://jasmine.github.io/) - The test framework.
+- [Git](https://git-scm.com/) - The version control system.
