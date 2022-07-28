@@ -13,6 +13,15 @@ describe('Test end point response  ', async () => {
     );
     expect(response.status).toBe(200);
   });
+
+  //image processing
+  it('check if image is resized ', async () => {
+    const response = await request.get(
+      '/api/images/resize/?width=200&height=200&filename=palmtunnel'
+    );
+    expect(response).toBeTruthy();
+  });
+
   //check validation messages
   it('check if the file name is not passed and return 422 response', async () => {
     const response = await request.get(
