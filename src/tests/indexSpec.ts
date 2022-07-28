@@ -3,6 +3,8 @@ import { IMAGE_OUTPUT_DIR_PATH } from '../utils/imagePaths';
 import fs from 'fs';
 import app from '../index';
 
+import resizeController from '../utils/resizeController';
+
 //create request to test the server
 const request = supertest(app);
 
@@ -19,7 +21,13 @@ describe('Test end point response  ', async () => {
     const response = await request.get(
       '/api/images/resize/?width=200&height=200&filename=palmtunnel'
     );
-    expect(response).toBeTruthy();
+    expect(async () => {
+      resizeController(
+        response.body.width,
+        response.body.height,
+        response.body.filename
+      );
+    }).not.toThrow();
   });
 
   //check validation messages
